@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "image_with_text_overlay_JdxdPw": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AnyConv.com__Shopping_cart.webp",
+        "image_link": "",
+        "height": "fixed",
+        "height_desktop": 400,
+        "height_mobile": 500,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "text_alignment": "center",
+        "overlay_position_x": 50,
+        "overlay_position_y": 0,
+        "mobile_text_below": false,
+        "overlay_title": "Buying a gift?",
+        "enlarge_title": false,
+        "overlay_title_width": 100,
+        "styled_words": "",
+        "words_style": "stencil",
+        "highlight_words_top": 10,
+        "highlight_color": "#ffffff",
+        "styled_word_color": "#b5e0fa",
+        "overlay_text": "Just send us a message if you want to personalize your item!",
+        "enlarge_text": false,
+        "overlay_url_text_1": "",
+        "overlay_url_1": "",
+        "overlay_url_text_2": "",
+        "overlay_url_2": "",
+        "overlay_url_style": "button_1",
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "show_chevron": true,
+        "product_id_1": "",
+        "chevron_position_1": "right",
+        "label_position_x_1": 20,
+        "label_position_y_1": 30,
+        "product_id_2": "",
+        "chevron_position_2": "right",
+        "label_position_x_2": 80,
+        "label_position_y_2": 50
+      }
+    },
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "show_tax_and_shipping": true,
+        "enable_cart_notes": true,
+        "cart_terms_page": "",
+        "show_additional_checkout_buttons": true,
+        "show_backorder_text": true,
+        "show_recently_viewed": true,
+        "show_recently_viewed_vendor": false,
+        "show_shipping_calculator": false,
+        "shipping_calculator_default_country": "United States"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_JdxdPw",
+    "main"
+  ]
+}

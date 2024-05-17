@@ -1,0 +1,76 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "title_alignment": "left"
+      }
+    },
+    "image_with_text_overlay_PLJyqM": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AnyConv.com__About_us.webp",
+        "image_link": "",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 0,
+        "color_overlay_text": "#000000",
+        "text_alignment": "center",
+        "overlay_position_x": 50,
+        "overlay_position_y": 42,
+        "mobile_text_below": false,
+        "overlay_title": "Let’s connect",
+        "enlarge_title": false,
+        "overlay_title_width": 100,
+        "styled_words": "",
+        "words_style": "stencil",
+        "highlight_words_top": 10,
+        "highlight_color": "#ffffff",
+        "styled_word_color": "#b5e0fa",
+        "overlay_text": "Who are we and why did we decide to make educational toys?",
+        "enlarge_text": false,
+        "overlay_url_text_1": "",
+        "overlay_url_1": "",
+        "overlay_url_text_2": "",
+        "overlay_url_2": "",
+        "overlay_url_style": "button_1",
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "show_chevron": true,
+        "product_id_1": "",
+        "chevron_position_1": "right",
+        "label_position_x_1": 20,
+        "label_position_y_1": 30,
+        "product_id_2": "",
+        "chevron_position_2": "right",
+        "label_position_x_2": 80,
+        "label_position_y_2": 50
+      }
+    },
+    "rich_text_wkxiEC": {
+      "type": "rich-text",
+      "settings": {
+        "title": "",
+        "text": "<p>SpaceMe has been a manufacturer of children's educational toys for more than seven years. But the story began much much earlier…<\/p><p>From time immemorial, our ancestors worked with wood: harvesting, processing and polishing it. From time immemorial, our ancestors worked with wood: harvesting, processing and polishing it. So it was with Father, who did not deviate from family traditions. And, perhaps, nothing would have broken the traditions if he had not had a Daughter.<\/p><p>This small, but unrestrained girl wanted to try out everything she met on her way: sockets, buttons, locks, switches – nothing was left without her attention. Concerned for his Daughter's safety, the Father decided to create a safer version of the toy that could satisfy her curiosity. This is how the first busy-boards were created with elements that interested the baby so much.<\/p><p>The Father realized that his Daughter was not the only child who wanted to explore the world around her. That is why he decided to change the direction of his occupation, starting to create educational toys for children. Such toys not only occupy the child for a long time, but also help them in the development of fine motor skills, attentiveness, persistence, and creative abilities. <\/p><p>Over the years, Father expanded his production more and more, but his goal remains the same – to occupy the child with an interesting and useful toy, so that parents can have some free and calm time.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "#ffffff",
+        "gradient_bg": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_PLJyqM",
+    "rich_text_wkxiEC"
+  ]
+}

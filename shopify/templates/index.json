@@ -1,0 +1,536 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_1.webp",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 0,
+            "color_overlay_text": "#4a3428",
+            "text_alignment": "align-left",
+            "overlay_position_x": 24,
+            "overlay_position_y": 100,
+            "overlay_title": "Busy-board:",
+            "enlarge_title": false,
+            "overlay_title_width": 100,
+            "styled_words": "board:",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#4a3428",
+            "overlay_text": "Explore, create, play!",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 100,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_2.webp",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 71,
+            "color_overlay_text": "#4a3428",
+            "text_alignment": "center",
+            "overlay_position_x": 100,
+            "overlay_position_y": 100,
+            "overlay_title": "Dollhouse:",
+            "enlarge_title": false,
+            "overlay_title_width": 100,
+            "styled_words": "",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#b5e0fa",
+            "overlay_text": "Manage your own small world!",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 20,
+            "label_position_y_1": 30,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        },
+        "image_eEPpye": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_3.webp",
+            "image_link": "",
+            "color_overlay_bg": "#ffffff",
+            "overlay_opacity": 0,
+            "color_overlay_text": "#4a3428",
+            "text_alignment": "align-left",
+            "overlay_position_x": 34,
+            "overlay_position_y": 100,
+            "overlay_title": "Furniture set:",
+            "enlarge_title": false,
+            "overlay_title_width": 100,
+            "styled_words": "Furniture",
+            "words_style": "stencil",
+            "highlight_words_top": 10,
+            "highlight_color": "#ffffff",
+            "styled_word_color": "#4a3428",
+            "overlay_text": "Small furniture, big fun!",
+            "enlarge_text": false,
+            "overlay_url_text_1": "",
+            "overlay_url_1": "",
+            "overlay_url_text_2": "",
+            "overlay_url_2": "",
+            "overlay_url_style": "button_1",
+            "color_label_background": "#ffffff",
+            "color_label_text": "#333333",
+            "show_chevron": true,
+            "product_id_1": "",
+            "chevron_position_1": "right",
+            "label_position_x_1": 89,
+            "label_position_y_1": 0,
+            "product_id_2": "",
+            "chevron_position_2": "right",
+            "label_position_x_2": 80,
+            "label_position_y_2": 50
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1",
+        "image_eEPpye"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "mobile_text_below": true,
+        "slide_transition": "fade",
+        "slideshow_autoplay": true,
+        "slideshow_autoplay_speed": 6
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "settings": {
+        "title": "Shop our collections",
+        "enlarge_title": false,
+        "collection_list": [
+          "busy-board",
+          "busy-house",
+          "busy-cube",
+          "furniture-sets"
+        ],
+        "grid": 4
+      }
+    },
+    "scrolling-banner": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "scrolling-block-0": {
+          "type": "text",
+          "settings": {
+            "text": "Your scrolling text here",
+            "use_custom_color": false,
+            "color": "#230051",
+            "font": "heading",
+            "link": "",
+            "use_h1": false,
+            "stencil_all_text": false,
+            "stencil_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "scrolling-block-0"
+      ],
+      "settings": {
+        "text_size": 50,
+        "vertical_padding": 20,
+        "full_width": true,
+        "speed": 14,
+        "direction": "left",
+        "space": 50,
+        "color_bg": "#d3f4e8",
+        "gradient_bg": ""
+      }
+    },
+    "background_video_wqUp43": {
+      "type": "background-video",
+      "settings": {
+        "video_external": "https:\/\/cdn.shopify.com\/videos\/c\/vp\/169e8bb8edd54c8bbe5c6c93d3bc99e3\/169e8bb8edd54c8bbe5c6c93d3bc99e3.HD-1080p-2.5Mbps-11227685.mp4",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_title": "",
+        "overlay_text": "",
+        "overlay_url_text_1": "",
+        "overlay_url_1": "",
+        "overlay_url_text_2": "",
+        "overlay_url_2": "",
+        "overlay_url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_x": 50,
+        "overlay_position_y": 70,
+        "mobile_text_below": false,
+        "color_label_background": "#ffffff",
+        "color_label_text": "#333333",
+        "show_chevron": true,
+        "product_id_1": "",
+        "chevron_position_1": "right",
+        "label_position_x_1": 20,
+        "label_position_y_1": 30,
+        "product_id_2": "",
+        "chevron_position_2": "right",
+        "label_position_x_2": 80,
+        "label_position_y_2": 50
+      }
+    },
+    "testimonials_6kEG68": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_NUygNj": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "author": ""
+          }
+        },
+        "testimonial_7ybLBC": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "author": ""
+          }
+        },
+        "testimonial_XGtNKE": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "author": ""
+          }
+        },
+        "testimonial_3eNpFK": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "author": ""
+          }
+        },
+        "testimonial_m7pjkF": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "author": ""
+          }
+        },
+        "testimonial_7yirLp": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "author": ""
+          }
+        },
+        "testimonial_pUTLFK": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_NUygNj",
+        "testimonial_7ybLBC",
+        "testimonial_XGtNKE",
+        "testimonial_3eNpFK",
+        "testimonial_m7pjkF",
+        "testimonial_7yirLp",
+        "testimonial_pUTLFK"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "#ecf1f2",
+        "gradient_bg": "",
+        "color_star": "#ffdd00",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "autoplay": false,
+        "autoplay_speed": 6,
+        "circle_images": false
+      }
+    },
+    "get_the_look_wNK7ei": {
+      "type": "get-the-look",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AnyConv.com__Popular_collage.webp",
+        "product_list": [
+          "product-1",
+          "product-2",
+          "product-3"
+        ],
+        "color_text": "#333333",
+        "color_bg": "#d3f4e8",
+        "gradient_bg": "",
+        "show_vendor": false,
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_title": "",
+        "overlay_text": "",
+        "overlay_url_text": "",
+        "overlay_url": "",
+        "overlay_url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_y": 70
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Educational toys from the Montessori collection:",
+        "enlarge_title": false,
+        "link_text": "where learning meets play!",
+        "collection": "montessori",
+        "show_vendor": false,
+        "enable_carousel": false,
+        "grid": 4,
+        "row_count": 1,
+        "grid_mobile": "2"
+      }
+    },
+    "featured-blog": {
+      "type": "featured-blog",
+      "settings": {
+        "heading_image": "shopify:\/\/shop_images\/AnyConv.com__Blog_1.webp",
+        "title": "Blog posts",
+        "description": "Short description of your blog",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "show_view_all": true,
+        "overlay_url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "overlay_position_y": 70,
+        "blog": "blog",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": true,
+        "show_tags": true,
+        "show_featured_products": true
+      }
+    },
+    "image_gallery_bYpgFR": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_AgTQPd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Categories_1.webp",
+            "enlarge_image": false,
+            "link": "shopify:\/\/collections\/busy-house",
+            "title": "",
+            "text": "",
+            "button_label": "Busy house",
+            "overlay_position": "bottom-left"
+          }
+        },
+        "image_GMQcef": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Categories_3.webp",
+            "enlarge_image": false,
+            "link": "shopify:\/\/collections\/furniture-sets",
+            "title": "",
+            "text": "",
+            "button_label": "Furniture sets",
+            "overlay_position": "bottom-left"
+          }
+        },
+        "image_p9gzAR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Categories_2.webp",
+            "enlarge_image": false,
+            "link": "shopify:\/\/collections\/busy-cube",
+            "title": "",
+            "text": "",
+            "button_label": "Busy cube",
+            "overlay_position": "bottom-left"
+          }
+        },
+        "image_634Rbj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Categories_4.webp",
+            "enlarge_image": false,
+            "link": "shopify:\/\/collections\/name-puzzle",
+            "title": "",
+            "text": "",
+            "button_label": "Name puzzle",
+            "overlay_position": "bottom-left"
+          }
+        },
+        "image_7yt9j6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Categories_5.webp",
+            "enlarge_image": false,
+            "link": "shopify:\/\/collections\/busy-board",
+            "title": "",
+            "text": "",
+            "button_label": "Busy board",
+            "overlay_position": "bottom-left"
+          }
+        }
+      },
+      "block_order": [
+        "image_AgTQPd",
+        "image_GMQcef",
+        "image_p9gzAR",
+        "image_634Rbj",
+        "image_7yt9j6"
+      ],
+      "settings": {
+        "grid": 3,
+        "image_height": 400,
+        "image_height_mobile": 300,
+        "enable_margin": false,
+        "enable_carousel": true,
+        "overlay_style": "box",
+        "color_overlay_bg": "#ffffff",
+        "overlay_opacity": 80,
+        "color_overlay_text": "#333333",
+        "overlay_url_style": "button_1"
+      }
+    },
+    "multi-column": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_YjjT6q": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/truck-vector-silhouette-21_1.svg",
+            "image_width": 100,
+            "enable_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Early learning essentials:",
+            "text": "<p>first step to great achievements<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "column-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/leaf-30_1.svg",
+            "image_width": 100,
+            "enable_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Safe and durable:",
+            "text": "<p>your reliable choice<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        },
+        "column-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/8228428_1.svg",
+            "image_width": 100,
+            "enable_icon": false,
+            "icon": "award",
+            "icon_size": 48,
+            "icon_color": "",
+            "title": "Discounts for regular buyers:",
+            "text": "<p>more purchases – more discounts<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "enlarge_title": false,
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_block_YjjT6q",
+        "column-0",
+        "column-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "title": "",
+        "enlarge_title": false,
+        "text_alignment": "center",
+        "url_style": "button_1",
+        "enable_custom_colors": true,
+        "color_title": "",
+        "color_text": "",
+        "color_bg": "#f5f3e7",
+        "gradient_bg": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "collection-list",
+    "scrolling-banner",
+    "background_video_wqUp43",
+    "testimonials_6kEG68",
+    "get_the_look_wNK7ei",
+    "featured-collection",
+    "featured-blog",
+    "image_gallery_bYpgFR",
+    "multi-column"
+  ]
+}
