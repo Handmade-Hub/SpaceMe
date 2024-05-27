@@ -3,26 +3,26 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-0": {
+        "image_eEPpye": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_1.webp",
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_3.webp",
             "image_link": "",
             "color_overlay_bg": "#ffffff",
-            "overlay_opacity": 0,
+            "overlay_opacity": 70,
             "color_overlay_text": "#4a3428",
-            "text_alignment": "align-left",
-            "overlay_position_x": 24,
+            "text_alignment": "center",
+            "overlay_position_x": 36,
             "overlay_position_y": 100,
-            "overlay_title": "Busy-board:",
+            "overlay_title": "Furniture set:",
             "enlarge_title": false,
             "overlay_title_width": 100,
-            "styled_words": "board:",
+            "styled_words": "Furniture",
             "words_style": "stencil",
             "highlight_words_top": 10,
             "highlight_color": "#ffffff",
             "styled_word_color": "#4a3428",
-            "overlay_text": "Explore, create, play!",
+            "overlay_text": "Small furniture, big fun!",
             "enlarge_text": false,
             "overlay_url_text_1": "",
             "overlay_url_1": "",
@@ -34,8 +34,8 @@
             "show_chevron": true,
             "product_id_1": "",
             "chevron_position_1": "right",
-            "label_position_x_1": 20,
-            "label_position_y_1": 100,
+            "label_position_x_1": 89,
+            "label_position_y_1": 0,
             "product_id_2": "",
             "chevron_position_2": "right",
             "label_position_x_2": 80,
@@ -81,26 +81,26 @@
             "label_position_y_2": 50
           }
         },
-        "image_eEPpye": {
+        "slide-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_3.webp",
+            "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_1.webp",
             "image_link": "",
             "color_overlay_bg": "#ffffff",
-            "overlay_opacity": 0,
+            "overlay_opacity": 71,
             "color_overlay_text": "#4a3428",
-            "text_alignment": "align-left",
-            "overlay_position_x": 34,
+            "text_alignment": "center",
+            "overlay_position_x": 24,
             "overlay_position_y": 100,
-            "overlay_title": "Furniture set:",
+            "overlay_title": "Busy-board:",
             "enlarge_title": false,
             "overlay_title_width": 100,
-            "styled_words": "Furniture",
+            "styled_words": "board:",
             "words_style": "stencil",
             "highlight_words_top": 10,
             "highlight_color": "#ffffff",
             "styled_word_color": "#4a3428",
-            "overlay_text": "Small furniture, big fun!",
+            "overlay_text": "Explore, create, play!",
             "enlarge_text": false,
             "overlay_url_text_1": "",
             "overlay_url_1": "",
@@ -112,8 +112,8 @@
             "show_chevron": true,
             "product_id_1": "",
             "chevron_position_1": "right",
-            "label_position_x_1": 89,
-            "label_position_y_1": 0,
+            "label_position_x_1": 20,
+            "label_position_y_1": 100,
             "product_id_2": "",
             "chevron_position_2": "right",
             "label_position_x_2": 80,
@@ -122,9 +122,9 @@
         }
       },
       "block_order": [
-        "slide-0",
+        "image_eEPpye",
         "slide-1",
-        "image_eEPpye"
+        "slide-0"
       ],
       "settings": {
         "height": "adapt",
@@ -156,14 +156,14 @@
         "scrolling-block-0": {
           "type": "text",
           "settings": {
-            "text": "Your scrolling text here",
+            "text": "Discounts for regular buyers: more purchases – more discounts",
             "use_custom_color": false,
             "color": "#230051",
             "font": "heading",
             "link": "",
             "use_h1": false,
             "stencil_all_text": false,
-            "stencil_text": ""
+            "stencil_text": "more purchases – more discounts"
           }
         }
       },
@@ -222,7 +222,8 @@
           "type": "testimonial",
           "settings": {
             "star_rating": 5,
-            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "testimonial": "<p>When my kid first saw this busy-set, she couldn’t take her eyes off it for almost a whole hour! This is a real record for my daughter. So I can confidently recommend this product.<\/p>",
+            "image": "shopify:\/\/shop_images\/IMG_3715.webp",
             "author": ""
           }
         },
@@ -230,7 +231,8 @@
           "type": "testimonial",
           "settings": {
             "star_rating": 5,
-            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "testimonial": "<p>Finally, I received my busy-board too! My children are simply thrilled. Thank you!<\/p>",
+            "image": "shopify:\/\/shop_images\/IMG_3721.webp",
             "author": ""
           }
         },
@@ -238,7 +240,8 @@
           "type": "testimonial",
           "settings": {
             "star_rating": 5,
-            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "testimonial": "<p>My child really likes bright colors! And he’s curious to touch everything, so finally he has that opportunity.<\/p>",
+            "image": "shopify:\/\/shop_images\/IMG_3712.webp",
             "author": ""
           }
         },
@@ -246,7 +249,8 @@
           "type": "testimonial",
           "settings": {
             "star_rating": 5,
-            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "testimonial": "<p>The board is indeed large, so my daughter can sit by it for quite a while. And items like the socket, remote, and latch help her avoid touching things she shouldn’t, satisfying her curiosity.<\/p>",
+            "image": "shopify:\/\/shop_images\/67101EC9-1B0D-47DE-9FED-4DACAA75635E.webp",
             "author": ""
           }
         },
@@ -254,7 +258,17 @@
           "type": "testimonial",
           "settings": {
             "star_rating": 5,
-            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "testimonial": "<p>As soon as we showed this cube to the children, they forgot about all the other toys! We are totally satisfied with the purchase.<\/p>",
+            "image": "shopify:\/\/shop_images\/465DAA94-D424-48D8-83C4-5EA78620DEDC.webp",
+            "author": ""
+          }
+        },
+        "testimonial_nK9HUw": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>My granddaughter absolutely adores this little house! She said she’ll build one for herself when she grows up – it’s so cute!<\/p>",
+            "image": "shopify:\/\/shop_images\/IMG_5307.webp",
             "author": ""
           }
         },
@@ -262,15 +276,8 @@
           "type": "testimonial",
           "settings": {
             "star_rating": 5,
-            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
-            "author": ""
-          }
-        },
-        "testimonial_pUTLFK": {
-          "type": "testimonial",
-          "settings": {
-            "star_rating": 5,
-            "testimonial": "<p>We couldn't be more pleased, the products and services are absolutely fantastic!<\/p>",
+            "testimonial": "<p>My sons and I really liked the purchase, thank you. The delivery was pretty fast.<\/p>",
+            "image": "shopify:\/\/shop_images\/IMG_3714.webp",
             "author": ""
           }
         }
@@ -281,8 +288,8 @@
         "testimonial_XGtNKE",
         "testimonial_3eNpFK",
         "testimonial_m7pjkF",
-        "testimonial_7yirLp",
-        "testimonial_pUTLFK"
+        "testimonial_nK9HUw",
+        "testimonial_7yirLp"
       ],
       "settings": {
         "title": "Testimonials",
