@@ -24,6 +24,12 @@
           "settings": {
           }
         },
+        "customization_info_PNztBy": {
+          "type": "customization_info",
+          "settings": {
+            "customization_label": "Personalization:"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -75,6 +81,7 @@
         "reviews_summary_ARjRTa",
         "vendor",
         "type",
+        "customization_info_PNztBy",
         "variant_picker",
         "buy_buttons",
         "description",

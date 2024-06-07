@@ -227,15 +227,6 @@
             "author": ""
           }
         },
-        "testimonial_7ybLBC": {
-          "type": "testimonial",
-          "settings": {
-            "star_rating": 5,
-            "testimonial": "<p>Finally, I received my busy-board too! My children are simply thrilled. Thank you!<\/p>",
-            "image": "shopify:\/\/shop_images\/IMG_3721.webp",
-            "author": ""
-          }
-        },
         "testimonial_XGtNKE": {
           "type": "testimonial",
           "settings": {
@@ -263,6 +254,15 @@
             "author": ""
           }
         },
+        "testimonial_7ybLBC": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "<p>Finally, I received my busy-board too! My children are simply thrilled. Thank you!<\/p>",
+            "image": "shopify:\/\/shop_images\/IMG_3721.webp",
+            "author": ""
+          }
+        },
         "testimonial_nK9HUw": {
           "type": "testimonial",
           "settings": {
@@ -284,10 +284,10 @@
       },
       "block_order": [
         "testimonial_NUygNj",
-        "testimonial_7ybLBC",
         "testimonial_XGtNKE",
         "testimonial_3eNpFK",
         "testimonial_m7pjkF",
+        "testimonial_7ybLBC",
         "testimonial_nK9HUw",
         "testimonial_7yirLp"
       ],

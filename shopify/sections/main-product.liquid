@@ -152,6 +152,19 @@
                     {%- endif -%}
                   </div>
 
+                  {%- when 'customization_info' -%}
+                      {% if product.tags contains 'With personalization' %}
+                          <div class="product-detail__personalization_text" {{ block.shopify_attributes }}>
+                              <label for="personalization-info">
+                                  {{ block.settings.customization_label }}
+                              </label>
+                              <div class="field">
+                                  <input class="field__input" type="text" id="personalization-info" placeholder="Personalization">
+                                  <p class="personalization__symbol-counter"></p>
+                              </div>
+                          </div>
+                      {% endif %}
+
                 {%- when 'reviews_summary' -%}
                   {%- if product.metafields.reviews.rating_count != blank -%}
                     {%- assign rating_count = product.metafields.reviews.rating_count | plus: 0 -%}
@@ -343,6 +356,10 @@
 
                     {% if product.available and block.settings.show_backorder_text == true %}
                       {% render 'backorder', product: product, variant: current_variant %}
+                    {% endif %}
+
+                    {% if product.tags contains 'With personalization' %}
+                      <input type="hidden" id="personalization_info_hidden" name="properties[Personalization info]">
                     {% endif %}
                   {%- endform -%}
 
@@ -749,6 +766,18 @@
     "blocks": [
       {
         "type": "@app"
+      },
+      {
+        "type": "customization_info",
+        "name": "Customization info",
+        "settings": [
+          {
+            "type": "text",
+            "id": "customization_label",
+            "default": "Personalization:",
+            "label": "Label for input"
+          }
+        ]
       },
       {
         "type": "buy_buttons",

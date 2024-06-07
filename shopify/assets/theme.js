@@ -8133,3 +8133,21 @@
 
 })(theme.jQuery);  
 /* Built with Barry v1.0.8 */
+
+// change personalization hidden input
+document.addEventListener('DOMContentLoaded', function (){
+  if (document.querySelector('.product-detail__detail') && document.querySelectorAll('.personalization_text')){
+    let personalizationTextBlock = document.querySelector('#personalization-info');
+    let personalizationTextHiddenField = document.querySelector('#personalization_info_hidden');
+
+
+    personalizationTextBlock.addEventListener('input', function (event) {
+
+      personalizationTextHiddenField.value = event.target.value;
+      personalizationTextHiddenField.dispatchEvent(new Event('input'))
+
+      console.log('event.target.value;', event.target.value);
+
+    });
+  }
+})
