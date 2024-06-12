@@ -8134,20 +8134,49 @@
 })(theme.jQuery);  
 /* Built with Barry v1.0.8 */
 
-// change personalization hidden input
+// personalization functions
 document.addEventListener('DOMContentLoaded', function (){
-  if (document.querySelector('.product-detail__detail') && document.querySelectorAll('.personalization_text')){
-    let personalizationTextBlock = document.querySelector('#personalization-info');
+  if (document.querySelector('.product-detail__detail')){
+    let productOptions = document.querySelectorAll('.option-selector');
+    let personalizationTextBlock = document.querySelector('.product-detail__personalization_text');
+    let personalizationText = document.querySelector('#personalization-info');
     let personalizationTextHiddenField = document.querySelector('#personalization_info_hidden');
 
+    productOptions.forEach(function (item){
+      let optionLabel = item.querySelector('legend').innerText;
+      if (optionLabel.includes('Personalisation')) {
+        let personalizationOption = item;
+        let nameRadioButtons = personalizationOption.querySelector('.option-selector__btns .opt-btn').getAttribute('name');
+        let radioButtons = personalizationOption.querySelectorAll('.opt-btn[name="' + nameRadioButtons + '"]')
 
-    personalizationTextBlock.addEventListener('input', function (event) {
+        // display personalization block if checked 'with personalisation'
+        radioButtons.forEach(function (item) {
+          if (item.checked && item.value.toLowerCase() === 'with personalisation') {
+            personalizationTextBlock.style.display = 'block';
+          }
+        })
 
+        personalizationListener(radioButtons);
+      }
+    })
+
+    // listen change personalization option
+    function personalizationListener(radioButtons){
+      radioButtons.forEach(function (item){
+        item.addEventListener('change', function (event){
+          if (event.target.value.toLowerCase() === 'with personalisation') {
+            personalizationTextBlock.style.display = 'block';
+          } else {
+            personalizationTextBlock.style.display = 'none';
+          }
+        })
+      })
+    }
+
+    // change personalization hidden input
+    personalizationText.addEventListener('input', function (event) {
       personalizationTextHiddenField.value = event.target.value;
       personalizationTextHiddenField.dispatchEvent(new Event('input'))
-
-      console.log('event.target.value;', event.target.value);
-
     });
   }
 })

@@ -24,18 +24,18 @@
           "settings": {
           }
         },
-        "customization_info_PNztBy": {
-          "type": "customization_info",
-          "settings": {
-            "customization_label": "Personalization:"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
             "size_chart_enabled": false,
             "size_chart_option_name": "Size",
             "size_chart_page_id": ""
+          }
+        },
+        "customization_info_PNztBy": {
+          "type": "customization_info",
+          "settings": {
+            "customization_label": "Personalization:"
           }
         },
         "buy_buttons": {
@@ -81,8 +81,8 @@
         "reviews_summary_ARjRTa",
         "vendor",
         "type",
-        "customization_info_PNztBy",
         "variant_picker",
+        "customization_info_PNztBy",
         "buy_buttons",
         "description",
         "sharing"

@@ -153,11 +153,14 @@
                   </div>
 
                   {%- when 'customization_info' -%}
-                      {% if product.tags contains 'With personalization' %}
+                        {% if product.options contains 'Personalisation' %}
                           <div class="product-detail__personalization_text" {{ block.shopify_attributes }}>
                               <label for="personalization-info">
                                   {{ block.settings.customization_label }}
                               </label>
+                            {% if product.metafields.custom.personalization_info != blank %}
+                              <p class="personalization-instruction">{{ product.metafields.custom.personalization_info }}</p>
+                            {% endif %}
                               <div class="field">
                                   <input class="field__input" type="text" id="personalization-info" placeholder="Personalization">
                                   <p class="personalization__symbol-counter"></p>
@@ -358,7 +361,8 @@
                       {% render 'backorder', product: product, variant: current_variant %}
                     {% endif %}
 
-                    {% if product.tags contains 'With personalization' %}
+                      <script>console.log('product', {{ product | json }})</script>
+                    {% if product.options contains 'Personalisation' %}
                       <input type="hidden" id="personalization_info_hidden" name="properties[Personalization info]">
                     {% endif %}
                   {%- endform -%}
