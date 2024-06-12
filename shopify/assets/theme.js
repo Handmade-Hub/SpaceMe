@@ -8136,11 +8136,31 @@
 
 // personalization functions
 document.addEventListener('DOMContentLoaded', function (){
+  let personalizationTextBlock, personalizationText, personalizationTextHiddenField;
+
+  // personalization on product page
   if (document.querySelector('.product-detail__detail')){
+    setPersonalization();
+  }
+
+  // personalization on cart page
+  if (document.querySelector('.cart-upsell-block')){
+    document.querySelector('.cart-upsell-block .js-quickbuy-button').addEventListener('click', function (){
+      setTimeout(function (){
+        setPersonalization();
+        document.querySelector('.quickbuy__submit').addEventListener('click', function (event) {
+          event.preventDefault();
+          document.querySelector('.quickbuy-hidden-form').submit();
+        })
+      },500)
+    })
+  }
+
+  function setPersonalization(){
+    personalizationTextBlock = document.querySelector('.product-detail__personalization_text');
+    personalizationText = document.querySelector('#personalization-info');
+    personalizationTextHiddenField = document.querySelector('#personalization_info_hidden');
     let productOptions = document.querySelectorAll('.option-selector');
-    let personalizationTextBlock = document.querySelector('.product-detail__personalization_text');
-    let personalizationText = document.querySelector('#personalization-info');
-    let personalizationTextHiddenField = document.querySelector('#personalization_info_hidden');
 
     productOptions.forEach(function (item){
       let optionLabel = item.querySelector('legend').innerText;
@@ -8155,23 +8175,22 @@ document.addEventListener('DOMContentLoaded', function (){
             personalizationTextBlock.style.display = 'block';
           }
         })
-
         personalizationListener(radioButtons);
       }
     })
+  }
 
-    // listen change personalization option
-    function personalizationListener(radioButtons){
-      radioButtons.forEach(function (item){
-        item.addEventListener('change', function (event){
-          if (event.target.value.toLowerCase() === 'with personalisation') {
-            personalizationTextBlock.style.display = 'block';
-          } else {
-            personalizationTextBlock.style.display = 'none';
-          }
-        })
+  // listen change personalization option
+  function personalizationListener(radioButtons){
+    radioButtons.forEach(function (item){
+      item.addEventListener('change', function (event){
+        if (event.target.value.toLowerCase() === 'with personalisation') {
+          personalizationTextBlock.style.display = 'block';
+        } else {
+          personalizationTextBlock.style.display = 'none';
+        }
       })
-    }
+    })
 
     // change personalization hidden input
     personalizationText.addEventListener('input', function (event) {

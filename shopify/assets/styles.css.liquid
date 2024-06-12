@@ -11100,6 +11100,41 @@ input[type=submit].btn--quicklook:not(.btn--plain),
   position: relative;
   text-align: center;
 }
+
+.cart-upsell-block {
+  max-width: 50%;
+  width: 100%;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .cart-upsell-block {
+    max-width: 100%;
+  }
+}
+
+.cart-upsell-text {
+  margin: 1rem 0;
+}
+
+.upsell-product-cart {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  background-color: #d3f4e8;
+  border-radius: 25px;
+  max-width: 26rem;
+}
+
+.upsell-product-cart__text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
 .product-block .product-price {
   font-size: 1.25rem;
   margin: 10px 0;

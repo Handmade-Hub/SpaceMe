@@ -1,3 +1,5 @@
+{% assign product = all_products[section.settings.product]  %}
+
 <div class="cart" data-section-id="{{ section.id }}" data-section-type="cart" data-ajax-update="true">
   <div class="container">
     <div class="page-width large-row">
@@ -127,70 +129,84 @@
 
                 </div>
               </li>
+              {% if product.id == item.product_id %}
+                {% assign cart_have_upsell_product = true %}
+              {% endif %}
             {% endfor %}
           </ul>
 
-          <div class="grid subtotal-row">
-            <div class="grid__item one-half small-down--one-whole">
-              {% if section.settings.show_tax_and_shipping %}
-                {%- capture taxes_shipping_checkout -%}
-                  {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
-                    {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- elsif cart.taxes_included -%}
-                    {{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}
-                  {%- elsif shop.shipping_policy.body != blank -%}
-                    {{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
-                  {%- else -%}
-                    {{ 'cart.general.taxes_and_shipping_at_checkout' | t }}
-                  {%- endif -%}
-                {%- endcapture -%}
-              {% endif %}
-              <div class="cart-policies small-text large-row-over shipping-title">{{ taxes_shipping_checkout }}</div>
-            </div>
-
-            <div class="grid__item one-half small-down--one-whole text-right">
-              <div class="large-row-over total">
-                {%- if cart.cart_level_discount_applications != blank -%}
-                  <ul class="cart-discount-list">
-                    {%- for discount_application in cart.cart_level_discount_applications -%}
-                      <li class="cart-discount cart-discount--inline">
-                        <span class="cart-discount__label">{{ discount_application.title }}</span>
-                        <span class="cart-discount__amount theme-money">{{ discount_application.total_allocated_amount | money }}</span>
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                {%- endif -%}
-
-                <div class="total__title">
-                  <h2 class="small-title">{{ 'cart.general.subtotal' | t }}:</h2>
-                </div>
-
-                <div class="standard-title total__amount">
-                  <span class="theme-money">
-                    {%- if settings.cart_currency_code_enabled -%}
-                      {{- cart.total_price | money_with_currency -}}
+          <div class="cart-footer">
+            {% if product != blank and cart_have_upsell_product != true %}
+              <div class="cart-upsell-block">
+                {% if section.settings.upsell_text %}
+                  <h4 class="cart-upsell-text">{{ section.settings.upsell_text }}</h4>
+                {% endif %}
+                {% render 'upsell-product-cart', quickbuy: true, product: product, grid_class: grid_class_list, show_vendor: section.settings.show_vendor, animate: forloop.index, animate_style: "fade-in-up" %}
+              </div>
+            {% endif %}
+            <div class="grid__item one-half">
+            <div class="grid subtotal-row">
+              <div class="grid__item one-half small-down--one-whole">
+                {% if section.settings.show_tax_and_shipping %}
+                  {%- capture taxes_shipping_checkout -%}
+                    {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                      {{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    {%- elsif cart.taxes_included -%}
+                      {{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}
+                    {%- elsif shop.shipping_policy.body != blank -%}
+                      {{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
                     {%- else -%}
-                      {{- cart.total_price | money -}}
+                      {{ 'cart.general.taxes_and_shipping_at_checkout' | t }}
                     {%- endif -%}
-                  </span>
+                  {%- endcapture -%}
+                {% endif %}
+                <div class="cart-policies small-text large-row-over shipping-title">{{ taxes_shipping_checkout }}</div>
+              </div>
+
+              <div class="grid__item one-half small-down--one-whole text-right">
+                <div class="large-row-over total">
+                  {%- if cart.cart_level_discount_applications != blank -%}
+                    <ul class="cart-discount-list">
+                      {%- for discount_application in cart.cart_level_discount_applications -%}
+                        <li class="cart-discount cart-discount--inline">
+                          <span class="cart-discount__label">{{ discount_application.title }}</span>
+                          <span class="cart-discount__amount theme-money">{{ discount_application.total_allocated_amount | money }}</span>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+
+                  <div class="total__title">
+                    <h2 class="small-title">{{ 'cart.general.subtotal' | t }}:</h2>
+                  </div>
+
+                  <div class="standard-title total__amount">
+                    <span class="theme-money">
+                      {%- if settings.cart_currency_code_enabled -%}
+                        {{- cart.total_price | money_with_currency -}}
+                      {%- else -%}
+                        {{- cart.total_price | money -}}
+                      {%- endif -%}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="large-row cart-checks">
-            <div class="small-row flex cart-checks__titles">
-              {% if section.settings.cart_terms_page != blank %}
-                <div class="cart-terms small-text">
-                  <label class="cart-terms__checkbox" for="terms">
-                    {{- 'cart.terms.agreement_html' | t: terms_url: section.settings.cart_terms_page -}}
-                    <input type="checkbox" id="terms" name="attributes[Terms accepted]" value="Yes"{% if cart.attributes["Terms accepted"] == "Yes" %} checked{% endif %} required>
-                    <span class="cart-terms__check icon feather-icon">{% render 'feather-check' %}</span>
-                  </label>
-                </div>
-              {% endif %}
+            <div class="large-row cart-checks">
+              <div class="small-row flex cart-checks__titles">
+                {% if section.settings.cart_terms_page != blank %}
+                  <div class="cart-terms small-text">
+                    <label class="cart-terms__checkbox" for="terms">
+                      {{- 'cart.terms.agreement_html' | t: terms_url: section.settings.cart_terms_page -}}
+                      <input type="checkbox" id="terms" name="attributes[Terms accepted]" value="Yes"{% if cart.attributes["Terms accepted"] == "Yes" %} checked{% endif %} required>
+                      <span class="cart-terms__check icon feather-icon">{% render 'feather-check' %}</span>
+                    </label>
+                  </div>
+                {% endif %}
+              </div>
             </div>
-
+          </div>
             {% if section.settings.show_shipping_calculator %}
               <div class="shipping-calculator-container">
                 <div class="small-row">
@@ -283,6 +299,17 @@
   {
     "name": "Cart",
     "settings": [
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Upsell product"
+      },
+      {
+        "type": "text",
+        "id": "upsell_text",
+        "label": "Upsell text",
+        "default": "Buy it:"
+      },
       {
         "type": "checkbox",
         "id": "show_tax_and_shipping",
