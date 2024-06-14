@@ -5194,6 +5194,17 @@ h6,
 .product-detail__personalization_text {
   display: none;
   margin: 30px 0;
+  transition: .3s;
+}
+
+.product-detail__personalization_text.active {
+  display: block;
+}
+
+.product-detail__personalization_text.error {
+  background-color: rgb(225 133 133 / 40%);
+  padding: 10px 10px;
+  border-radius: 15px;
 }
 
 .product-detail__personalization_text .field__input {

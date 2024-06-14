@@ -8172,7 +8172,7 @@ document.addEventListener('DOMContentLoaded', function (){
         // display personalization block if checked 'with personalisation'
         radioButtons.forEach(function (item) {
           if (item.checked && item.value.toLowerCase() === 'with personalisation') {
-            personalizationTextBlock.style.display = 'block';
+            personalizationTextBlock.classList.add('active');
           }
         })
         personalizationListener(radioButtons);
@@ -8185,10 +8185,14 @@ document.addEventListener('DOMContentLoaded', function (){
     radioButtons.forEach(function (item){
       item.addEventListener('change', function (event){
         if (event.target.value.toLowerCase() === 'with personalisation') {
-          personalizationTextBlock.style.display = 'block';
+          personalizationTextBlock.classList.add('active');
         } else {
-          personalizationTextBlock.style.display = 'none';
+          personalizationTextBlock.classList.remove('active');
         }
+
+        setTimeout(function (){
+          checkPersonalizationField();
+        }, 100);
       })
     })
 
@@ -8196,6 +8200,36 @@ document.addEventListener('DOMContentLoaded', function (){
     personalizationText.addEventListener('input', function (event) {
       personalizationTextHiddenField.value = event.target.value;
       personalizationTextHiddenField.dispatchEvent(new Event('input'))
+      checkPersonalizationField();
     });
+
+    checkPersonalizationField();
+  }
+
+  function isEmptyPersonalizationField() {
+    if (personalizationText.value.length < 3) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  // disable button if field empty
+  function checkPersonalizationField() {
+    let buttons = document.querySelectorAll('.payment-buttons button');
+
+    if (personalizationTextBlock.classList.contains('active')) {
+      if (isEmptyPersonalizationField()) {
+        buttons.forEach(function (item){
+          item.setAttribute('disabled', 'disabled');
+          personalizationTextBlock.classList.add('error');
+        })
+      } else {
+        buttons.forEach(function (item){
+          item.removeAttribute('disabled');
+          personalizationTextBlock.classList.remove('error');
+        })
+      }
+    }
   }
 })
