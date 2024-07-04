@@ -36,7 +36,7 @@
         {% if section.settings.image == blank %}
           {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
         {% else %}
-          <div class="rimage-outer-wrapper rimage-background lazyload fade-in"
+          <div class="i rimage-outer-wrapper rimage-background lazyload fade-in"
             data-cc-animate="zoom-out"
             data-bgset="{% render 'bgset', image: section.settings.image %}"
             data-sizes="auto"
