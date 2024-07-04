@@ -47,7 +47,7 @@
       "type": "main-cart",
       "settings": {
         "product": "name-puzzle",
-        "upsell_text": "Buy it:",
+        "upsell_text": "Special offer: Add a personalized \"Name Puzzle\" now and save big!",
         "show_tax_and_shipping": false,
         "enable_cart_notes": false,
         "cart_terms_page": "",

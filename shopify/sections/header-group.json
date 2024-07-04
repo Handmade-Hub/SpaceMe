@@ -6,7 +6,7 @@
       "type": "announcement-bar",
       "settings": {
         "home_only_announcement_bar": false,
-        "announcement_bar_text": "Free Shipping on orders over $50",
+        "announcement_bar_text": "<strong>Worldwide Free Shipping!<\/strong>",
         "announcement_bar_col": "#d3f4e8",
         "announcement_bar_grad": "",
         "announcement_text_col": "#000000"
