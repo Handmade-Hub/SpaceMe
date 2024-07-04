@@ -8184,7 +8184,7 @@ document.addEventListener('DOMContentLoaded', function (){
   function personalizationListener(radioButtons){
     radioButtons.forEach(function (item){
       item.addEventListener('change', function (event){
-        if (event.target.value.toLowerCase() === 'with personalisation') {
+        if (event.target.value.toLowerCase() === 'with personalisation' || event.target.value.toLowerCase() === 'yes') {
           personalizationTextBlock.classList.add('active');
         } else {
           personalizationTextBlock.classList.remove('active');
