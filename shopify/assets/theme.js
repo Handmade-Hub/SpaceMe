@@ -8171,7 +8171,7 @@ document.addEventListener('DOMContentLoaded', function (){
 
         // display personalization block if checked 'with personalisation'
         radioButtons.forEach(function (item) {
-          if (item.checked && item.value.toLowerCase() === 'with personalisation') {
+          if (item.checked && item.value.toLowerCase() === 'with personalisation' || item.checked && item.value.toLowerCase() === 'yes') {
             personalizationTextBlock.classList.add('active');
           }
         })

@@ -62,7 +62,7 @@
 
               {%- if product.media.first.preview_image != blank -%}
                 {%- if section.settings.image_size == '0' -%}
-                  <div class="c rimage-outer-wrapper rimage-background lazyload fade-in"
+                  <div class="rimage-outer-wrapper rimage-background lazyload fade-in"
                     data-bgset="{% render 'bgset', image: product.media.first.preview_image %}"
                     data-sizes="auto"
                     data-parent-fit="cover">

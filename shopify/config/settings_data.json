@@ -72,6 +72,7 @@
     "enable_live_search": true,
     "live_search_show_price": true,
     "live_search_show_vendor": false,
+    "favicon": "shopify:\/\/shop_images\/Fav.svg",
     "product_currency_code_enabled": false,
     "primary_btn_border": "#50248f",
     "secondary_btn_border": "#f9fafb",
@@ -144,6 +145,7 @@
           "banner-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_3.webp",
               "image_link": "",
               "color_overlay_bg": "#ffffff",
               "overlay_opacity": 80,
@@ -182,6 +184,46 @@
           "banner-1": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_2.webp",
+              "image_link": "",
+              "color_overlay_bg": "#ffffff",
+              "overlay_opacity": 80,
+              "color_overlay_text": "#333333",
+              "text_alignment": "center",
+              "overlay_position_x": 50,
+              "overlay_position_y": 80,
+              "overlay_title": "Hero slideshow",
+              "enlarge_title": false,
+              "overlay_title_width": 100,
+              "styled_words": "",
+              "words_style": "stencil",
+              "highlight_words_top": 10,
+              "highlight_color": "#ffffff",
+              "styled_word_color": "#5d68bf",
+              "overlay_text": "Use this full width section to welcome customers to your store, share some news or say something about your brand",
+              "enlarge_text": false,
+              "overlay_url_text_1": "Optional buttons",
+              "overlay_url_1": "",
+              "overlay_url_text_2": "Optional buttons",
+              "overlay_url_2": "",
+              "overlay_url_style": "button_1",
+              "color_label_background": "#ffffff",
+              "color_label_text": "#333333",
+              "show_chevron": true,
+              "product_id_1": "",
+              "chevron_position_1": "right",
+              "label_position_x_1": 20,
+              "label_position_y_1": 30,
+              "product_id_2": "",
+              "chevron_position_2": "right",
+              "label_position_x_2": 80,
+              "label_position_y_2": 50
+            }
+          },
+          "image_Xcc33N": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AnyConv.com__Desktop_banners_1.webp",
               "image_link": "",
               "color_overlay_bg": "#ffffff",
               "overlay_opacity": 80,
@@ -220,7 +262,8 @@
         },
         "block_order": [
           "banner-0",
-          "banner-1"
+          "banner-1",
+          "image_Xcc33N"
         ],
         "settings": {
           "show_banner": false,

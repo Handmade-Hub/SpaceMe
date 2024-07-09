@@ -19,6 +19,23 @@
         "mobile_text_below": false
       }
     },
+    "rich_text_4Qbwmc": {
+      "type": "rich-text",
+      "settings": {
+        "title": "",
+        "text": "<h1>Blog<\/h1>",
+        "button_label": "",
+        "button_link": "",
+        "url_style": "button_1",
+        "enlarge_title": false,
+        "enlarge_text": false,
+        "full_width": false,
+        "color_title": "#333333",
+        "color_text": "#333333",
+        "color_bg": "#ecf1f2",
+        "gradient_bg": ""
+      }
+    },
     "featured_blog_UmYdHN": {
       "type": "featured-blog",
       "settings": {
@@ -44,6 +61,7 @@
   },
   "order": [
     "main",
+    "rich_text_4Qbwmc",
     "featured_blog_UmYdHN"
   ]
 }
